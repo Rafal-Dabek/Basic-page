@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+*{
+padding: 0;
+margin: 0;
+
+}
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+img{
+    border-radius: 50%;
+   display:flex;
+   float:left;
+   margin-right:10px;
+}
+img#Daniel{
+    border: 3px solid #6B599A;
+    
+}
+img#Patrick{
+    border: 3px solid #6B599A;
+    
+}
+div{
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 2em;
+    margin: auto;
+    
+    
+    
+}
+.card{
+    min-height: 300px;
+    padding: 2em;
+    border-radius: .5em;
+    margin-bottom: 2em;
+}
+.Daniel{
+    grid-column: 1/3;
+    background-color:  hsl(263, 55%, 52%);
+    color: white;
+    
+}
+.Daniel .gray, .Jonathan .gray, .Patrick .gray{
+    color: (0, 0%, 100%,50%);
+}
+.Jonathan{
+    grid-column: 3/4;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+.Kira{
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-color: white;
+}
+.Jeanette{
+    grid-column: 1/2;
+    background-color: white;
+    
+} 
+.Jeanette h5{
+    color:hsl(217, 19%, 35%);
+}
+ .Jeanette h1{
+    color:hsl(217, 19%, 35%);
+}
+
+.Patrick{
+    grid-column: 2/4;
+    background-color:  hsl(219, 29%, 14%);
+    color: white;
+}
+p{
+    color: hsl(0, 0%, 70%);
+    
+}
+h5{
+    margin-top: 10px;
+}
+.gray{
+   margin-bottom: 25px;
+   color: hsla(0, 0%, 70%,50%)
+}
+h1{
+    margin-bottom:20px;
+}
+.attribution{
+    display:inline;
+}
+@media (max-width: 1024px){
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+       
+        
+        
+      margin: auto;
+    }
+   
+    
+    .Daniel{
+        grid-row: 1/3;
+        grid-column: auto;
+    }
+
+    .Jonathan{
+        grid-row: 3/4;
+        grid-column: auto;
+    }
+    .Kira{
+        grid-row: 7/9;
+        grid-column: auto;
+    }
+    .Jeanette{
+        grid-row: 4/5;
+        grid-column: auto;
+        
+    } 
+    .Patrick{
+        grid-row: 5/7;
+        grid-column: auto;
+    }
+  }
+  
